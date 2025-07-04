@@ -155,6 +155,12 @@
     .home {
       padding: 0 1rem;
     }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
   
     #info > h1 {
       font-size: 2.5rem;
