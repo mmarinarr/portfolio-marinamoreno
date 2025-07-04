@@ -14,7 +14,7 @@ export const projects = [
       image:
         "/mockup2.png",
       tech: ["HTML5", "CSS3", "JavaScript", "VITE"],
-      github: "https://github.com/mmarinarr/Proyecto2-Portfolio",
+      github: "https://github.com/mmarinarr/portfolio-marinamoreno",
       link: "www.proyecto1.com",
     },
     {
