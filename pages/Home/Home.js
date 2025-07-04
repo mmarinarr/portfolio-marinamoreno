@@ -16,8 +16,27 @@ export const Home = () => {
     <div id="image">
     <p>Pasa el ratón por encima para conocerme mejor!</p>
     <img src="./marina2.jpg">
-    <video src="./marina3.mp4" muted loop autoplay id="myVideo"></video>
+    <video src="./marina3.mp4" muted loop id="myVideo"></video>
     </div>
     </div>
     </section>`;
+
+    const imageContainer = document.querySelector("#image");
+    const video = imageContainer.querySelector("video");
+    const img = imageContainer.querySelector("img");
+
+    imageContainer.addEventListener("mouseenter", () => {
+    img.style.opacity = "0";
+    video.style.opacity = "1";
+    video.currentTime = 0;
+    video.play();
+  });
+
+    imageContainer.addEventListener("mouseleave", () => {
+    img.style.opacity = "1";
+    video.style.opacity = "0";
+    video.pause();
+  });
 };
+
+
